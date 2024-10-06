@@ -7,13 +7,11 @@ This repository provides a setup for monitoring system and node metrics using Pr
 
 - [Overview](#overview)
 - [Features](#features)
-- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Prometheus Configuration](#prometheus-configuration)
 - [Grafana Setup](#grafana-setup)
 - [Alerts](#alerts)
-- [License](#license)
 
 ## Overview
 
@@ -30,17 +28,6 @@ This project includes:
 - **Grafana Dashboards**: Provides rich visualizations for CPU, memory, disk, and network usage.
 - **Alerting**: Sends alerts when instances are down for more than 5 minutes.
 - **Modular Design**: Easily configurable and extendable setup for various environments.
-
-## Project Structure
-
-```bash
-.
-├── alert.rules.yml                # Prometheus alerting rules
-├── LICENSE                        # License file
-├── prometheus.yml                 # Prometheus configuration file
-└── README.md                      # Project documentation (this file)
-
-```
 
 ## Prerequisites
 
@@ -118,7 +105,4 @@ groups:
 
 The rule will trigger an alert if any instance is down for more than 5 minutes. Customize these rules as per your monitoring needs.
 
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
 
